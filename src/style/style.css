@@ -1,0 +1,266 @@
+body {
+  margin: auto;
+  background-color: #e6eef4;
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+}
+
+.container1 {
+  margin: 0px;
+  margin-right: 450px;
+  margin-left: 500px;
+  margin-top: 45px;
+  margin-bottom: 44px;
+  background-color: rgba(85, 152, 161, 0.89);
+  margin-right: 500px;
+  border-radius: 6px;
+  padding: 55px;
+  width: 490px;
+  height: 650px;
+}
+
+.img1 {
+  width: 90px;
+  height: 90px;
+  margin-top: 25px;
+  margin-left: 25px;
+  padding: 5px;
+}
+.imagens {
+  background-color: rgba(71, 188, 161, 0.712);
+  border-radius: 100px;
+  margin: 0;
+  width: 150px;
+  height: 150px;
+  margin-left: 170px;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  font-size: 24px;
+}
+
+#correo1 {
+  width: 470px;
+  height: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+#contraseña1 {
+  width: 470px;
+  height: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+.intro {
+  background-color: #58a6ef;
+  color: #ffff;
+  margin-top: 85px;
+  margin-left: 70px;
+  width: 115px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+}
+
+.regis {
+  background-color: #58a6ef;
+  margin-left: 100px;
+  width: 115px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  border-radius: 4px;
+}
+
+/* Desde aqui empieza registro*/
+
+.container2 {
+  position: absolute;
+  width: 1040px;
+  height: 724px;
+  left: 200px;
+  top: 150px;
+  background: #5598a1;
+  border-radius: 6px;
+}
+.titulo1 {
+  text-align: center;
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 27px;
+}
+.marge {
+  margin-top: 48px;
+}
+
+.rgio {
+  color: #fff;
+  background-color: #5598a1;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 24px;
+  width: 630px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.rgo {
+  width: 40px;
+  height: 40px;
+  margin-left: 190px;
+  float: left;
+}
+
+.rosut {
+  margin-top: 50px;
+}
+
+.guardar {
+  background-color: #58a6ef;
+  color: #ffff;
+  margin-top: 85px;
+  margin-left: 150px;
+  width: 115px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+}
+.cancelar {
+  background-color: #58a6ef;
+  margin-left: 110px;
+  width: 115px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  border-radius: 4px;
+}
+.buttons {
+  margin-left: 250px;
+}
+
+/* diseño de la pagina  */
+.banner {
+  position: absolute;
+  width: 1440px;
+  height: 170px;
+  left: 0px;
+  top: 0px;
+  background: #5598a1;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.img3 {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  left: 32px;
+  top: 25px;
+}
+.imagen1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 20px;
+  top: 10px;
+  background: rgba(71, 188, 160, 0.54);
+  border-radius: 100px;
+}
+.listado {
+  position: absolute;
+  width: 1120px;
+  height: 590px;
+  left: 100px;
+  top: 117px;
+
+  background: #ffffff;
+  border: 1px solid #171616;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.contenido {
+  position: absolute;
+  width: 1300px;
+  height: 810px;
+  left: 70px;
+  top: 184px;
+  background: rgba(119, 211, 223, 0.59);
+  border-radius: 5px;
+}
+
+.cerrar {
+  position: absolute;
+  width: 180px;
+  height: 60px;
+  left: 1210px;
+  top: 50px;
+  background: #58a6ef;
+  border-radius: 6px;
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  margin-left: 190px;
+  margin-top: 65px;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  padding: 15px;
+  width: 1120px;
+}
+tr {
+  border-bottom: solid;
+}
+td {
+  text-align: center;
+  padding: 15px;
+}
+
+.buscar {
+  width: 150px;
+  height: 62px;
+  background: #58a6ef;
+  border-radius: 6px 0px 0px 6px;
+  margin-top: 25px;
+  margin-left: 210px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #ffff;
+}
+
+.busc{
+width: 720px;
+height: 58px;
+margin-top: 25px;
+background: rgba(255, 255, 255, 0.46);
+border: 1px solid #333333;
+box-sizing: border-box;
+border-radius: 0px 6px 6px 0px;
+color: #000;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+}
+.agre{
+    float:right;
+    margin-top: 420px;
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    background: #58a6ef;
+}
+.agreg{
+    float:right;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
