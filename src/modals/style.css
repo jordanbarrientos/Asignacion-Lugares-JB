@@ -1,0 +1,117 @@
+.popup {  
+    position: fixed;  
+    width: 100%;  
+    height: 100%;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    margin: auto;  
+    background-color: rgba(0,0,0, 0.5);  
+  }  
+
+  .container4{
+    margin: 0px;
+  margin-right: 450px;
+  margin-left: 550px;
+  margin-top: 45px;
+  margin-bottom: 44px;
+  background-color: rgba(85, 152, 161, 0.89);
+  margin-right: 500px;
+  border-radius: 6px;
+  padding: 45px;
+  width: 490px;
+  height: 580px;
+  }
+
+  h3{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  .nombre1{
+    width: 470px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 7px;
+  }
+  .dispo1{
+    width: 20px;
+    height: 20px;
+
+  }
+
+  .dispo2{
+    width: 20px;
+    height: 20px;  
+  }
+
+  .dislay{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 110px;
+  }
+
+  .dislay1{
+    color:#ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 95px;
+  }
+
+  .radio1{
+    width: 470px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 7px;
+  }
+  .lugar1{
+    width: 470px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 7px;
+  }
+  .imagens1{
+    background-color: rgba(71, 188, 161, 0.712);
+    border-radius: 100px;
+    margin: 0;
+    width: 130px;
+    height: 130px;
+    margin-left: 170px;
+  }
+  .img4{
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding: 5px;
+  }
+   .buttons1{
+     margin-top: 30px;
+   }
+   .regis2{
+    background-color: #58a6ef;
+    margin-left: 100px;
+    width: 115px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    border-radius: 4px;
+    border: solid 2px #0000;
+    border-color: #ffffff;
+   }
+.intro2{
+  background-color: #469cecd2;
+    margin-left: 100px;
+    width: 115px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    border-radius: 4px;
+    border: solid 2px;
+    border-color: #ffffff;
+} 
