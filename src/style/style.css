@@ -9,15 +9,15 @@ body {
 .container1 {
   margin: 0px;
   margin-right: 450px;
-  margin-left: 500px;
+  margin-left: 460px;
   margin-top: 45px;
-  margin-bottom: 44px;
+  margin-bottom: 15px;
   background-color: rgba(85, 152, 161, 0.89);
   margin-right: 500px;
   border-radius: 6px;
   padding: 55px;
   width: 490px;
-  height: 650px;
+  height: 630px;
 }
 
 .img1 {
@@ -67,6 +67,8 @@ h4 {
   height: 30px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 4px;
+  border: none;border: solid 2px;
+  border-color: #ffffff;
 }
 
 .regis {
@@ -77,6 +79,7 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffff;
   border-radius: 4px;
+  border: solid 2px ;
 }
 
 /* Desde aqui empieza registro*/
@@ -101,7 +104,7 @@ h4 {
 }
 
 .rgio {
-  color: #fff;
+  color: rgb(255, 251, 251);
   background-color: #5598a1;
   border: none;
   border-bottom: 1px solid #fff;
@@ -131,6 +134,9 @@ h4 {
   height: 30px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 4px;
+  border: none;
+  border: solid 2px;
+    border-color: #ffffff;
 }
 .cancelar {
   background-color: #58a6ef;
@@ -140,6 +146,9 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffff;
   border-radius: 4px;
+  border: none;
+  border: solid 2px;
+    border-color: #ffffff;
 }
 .buttons {
   margin-left: 250px;
@@ -205,6 +214,8 @@ h4 {
   border-radius: 6px;
   color: #ffff;
   font-family: Arial, Helvetica, sans-serif;
+  border:none;border: solid 2px;
+  border-color: #ffffff;
 }
 .titulo {
   font-family: Arial, Helvetica, sans-serif;
@@ -236,6 +247,7 @@ td {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #ffff;
+  border:none;
 }
 
 .busc{
@@ -257,10 +269,13 @@ font-size: 16px;
     height: 90px;
     border-radius: 100px;
     background: #58a6ef;
+    border:none;
 }
 .agreg{
     float:right;
     width: 70px;
     height: 70px;
     border-radius: 100px;
+    border:none;
+    margin-right: 5px;
 }
