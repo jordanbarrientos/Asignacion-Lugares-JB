@@ -4,9 +4,7 @@ import Usuario from '../imagen/usuario.png'
 import Email from '../imagen/correo.png'
 import Contraseña from '../imagen/contrasena.png'
 import firebase from 'firebase'
-import 'firebase/app'
 import 'firebase/auth'
-
 
 class Registro extends React.Component {
     constructor(props) {
@@ -32,26 +30,21 @@ class Registro extends React.Component {
     handleContraChance(event) {
         this.setState({ contraseña: event.target.value })
     }
-    handleSubmit = (event) => {
-        const{nombre,correo,contraseña}=this.state
-        firebase.auth().createUser({nombre,correo,contraseña })
-            .then(function(userRecord) {
-              console.log('Successfully created new user:', userRecord.uid);
-            })
-            .catch(function(error) {
-              console.log('Error creating new user:', error);
-            });
-       /* event.preventDefault();
-        const { correo, contraseña } = this.state;
-        firebase
+    handleSubmit =async (event) => {
+        
+         event.preventDefault();
+        const{correo,contraseña}=this.state
+    
+       await firebase
             .auth()
             .createUserWithEmailAndPassword(correo, contraseña)
             .then((user) => {
-                this.props.history.push('/');
+                this.props.history.push('/dashboard');
+                console.log("creando el usuario"+correo)
             })
             .catch((error) => {
                 this.setState({ error: error });
-            });*/
+            });
     };
     render() {
         return (
@@ -59,7 +52,7 @@ class Registro extends React.Component {
                 <div className="registro">
                     <div id="registro">
                         <h1 className="titulo1">Registro de Usuario</h1>
-                        <form className="marge" method="POST" onChange={this.handleSubmit}>
+                        <form className="marge"  onChange={this.handleSubmit}>
                             <div className="rosut">
                                 <img src={Usuario} className="rgo" alt='user' />
                                 <input type="text" id="nombre" name="nombre" className="rgio" placeholder="Ingrese su Nombre" value={this.state.nombre} onChange={this.handleNombreChance} />
@@ -75,7 +68,8 @@ class Registro extends React.Component {
                             <div className="buttons">
                                 <Link to="/pages" ><button className="cancelar" >cancelar</button></Link>
 
-                                <Link to="/pages"><button className="guardar" type='submit' >Guardar Usiario</button></Link>
+                                <Link to="/pages"></Link>
+                                <button className="guardar" type='submit' >Guardar Usiario</button>
                             </div>
                         </form>
                     </div>

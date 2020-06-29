@@ -47,15 +47,38 @@ class Popup extends React.Component {
     }
 
     handleSubmit() {
-        var postsRef = firebase.database().ref('nombre1','dispo1','radio1','lugar1', arguments.length);
-      
-        postsRef.on('nombre1','dispo1','radio1','lugar1', snapshot => {
-          this.setState({
-            posts: snapshot.val(),
-          });
-        });
-    }
 
+        const form = document.getElementById('regis1');
+
+        if(form){ 
+            form.addEventListener('submit',constCreate)
+          }
+      
+    function constCreate(event){
+        event.preventDefault();
+        const nombre1 = document.getElementById('nombre1')
+        const dispo1 = document.getElementById('input[type=radio]:checked')
+        const radio1 = document.getElementById('radio1')
+        const lugar1 = document.getElementById('lugar1')
+        const data = {
+            name: nombre1.value,
+            dispo:dispo1.value,
+            radio:radio1.value,
+            lugar:lugar1.value
+        }
+        saveConstCretate(data)
+        form.reset()
+    }
+    function saveConstCretate(data){
+        firebase.database().ref('registro').push(data)
+        .then(function(){
+            alert('mensaje guardado'); 
+          })
+          .catch(function(){
+            alert('mensaje No guardado');
+          });
+    }
+}
     render() {
         return (
             <div className='popup'>

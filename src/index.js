@@ -11,6 +11,8 @@ import PaginaPrincipal from './pages/paginaprincipal';
 const documento = document.getElementById('root');
 
 const App = (
+
+
 <BrowserRouter>
     <Switch>
         <Route path="/pages">

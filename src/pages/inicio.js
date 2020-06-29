@@ -2,7 +2,7 @@ import React from 'react'
 import Mpa from '../imagen/mapa.png'
 import { Link } from 'react-router-dom'
 import "../style/style.css"
-import firebase from '../firebase'
+import firebase from 'firebase'
 import 'firebase/app'
 import 'firebase/auth'
 
@@ -34,15 +34,14 @@ class Page extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
         const { correo1, contraseña1 } = this.state;
-       firebase
-       .auth()
-       .signInWithEmailAndPassword(correo1, contraseña1)
+       firebase.auth().signInWithEmailAndPassword(correo1, contraseña1)
        .then((user) => {
-         this.props.history.push('/');
+         this.props.target.push('/dashboard');
        })
        .catch((error) => {
          this.setState({ error: error });
        });
+       
     }
     render() {
         return (
@@ -58,8 +57,8 @@ class Page extends React.Component {
 
                     <Link to="/registro" ><button className="regis" >Registrar</button></Link>
 
-                    <Link to="/dashboard"><button className="intro" type="submit" value="Enviar">Iniciar Secion</button> </Link>
-                    
+                    <Link to="/dashboard"> </Link>
+                    <button className="intro" type="submit" value="Enviar">Iniciar Secion</button>
                 </form>
             </div >
 
