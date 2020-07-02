@@ -20,16 +20,15 @@ class Page extends React.Component {
     }
 
     handleNombreChange(event){
-        this.setState({correo1:event.target.value.toUpperCase()});
+        this.setState({correo1:event.target.value});
     }
     
     handleContraChange(event){
-        this.setState({contraseña1:event.target.value.toUpperCase()})
+        this.setState({contraseña1:event.target.value})
     }
-    handleSubmit(event) {
-        alert('esta informacion se ha ido con exitos: ' + this.state.correo1+''+this.state.contraseña1);
-        event.preventDefault();
-      }
+    handleSubmit() {
+       console.log()
+    }
     render() {  
 
         
