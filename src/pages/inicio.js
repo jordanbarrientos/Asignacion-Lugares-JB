@@ -2,6 +2,7 @@ import React from 'react'
 import Mpa from '../imagen/mapa.png'
 import { Link } from 'react-router-dom'
 import "../style/style.css"
+import {firebase} from '../firebase'
 
 
 
@@ -26,8 +27,17 @@ class Page extends React.Component {
     handleContraChange(event){
         this.setState({contraseña1:event.target.value})
     }
-    handleSubmit() {
-       console.log()
+    handleSubmit(event) {
+        event.preventDefault();
+        const { correo1, contraseña1 } = this.state;
+       firebase.auth().signInWithEmailAndPassword(correo1, contraseña1)
+       .then((user) => {
+         this.props.target.push('/dashboard');
+       })
+       .catch((error) => {
+         this.setState({ error: error });
+       });
+       
     }
     render() {  
 
