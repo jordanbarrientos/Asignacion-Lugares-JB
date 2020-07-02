@@ -3,13 +3,37 @@ import imagen from '../imagen/mapa.png'
 import { Link } from 'react-router-dom'
 import agregar from '../imagen/agregar.png'
 import Popup from '../modals/modal1';
-
+import {firebase} from '../firebase'
 
 
 class PaginaPrincipal extends React.Component {
     constructor(props) {
         super(props);
         this.state = { showPopup: false };
+    }
+    componentDidMount(){
+        const ref = firebase.firestore().collection("Lugares")
+
+        ref.get().then(querySnapshot => {
+
+            const lugares = []
+
+            querySnapshot.forEach(doc=>{
+                const {nombre} = doc.data()
+                const {disposicion} = doc.data()
+                const {radio} = doc.data()
+                const {Tlugar} = doc.data()
+    
+                lugares.push({
+                    id: doc.id,
+                    nombre,
+                    disposicion,
+                    radio,
+                    Tlugar
+                 })
+            })
+        })
+        .catch(error => { console.log("ërror", error) });
     }
 
     togglePopup() {
